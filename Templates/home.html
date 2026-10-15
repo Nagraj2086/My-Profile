@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <!-- <h1>My Portfolio</h1> -->
+    <!-- navbar section -->
+     <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <!-- <h2 class="t-white">Portfolio</h2> -->
+        </div>
+        <div class="right-nav">
+            <ul>
+                <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#projects" class="t-white roboto">Project <i class="fa-solid fa-project-diagram"></i></a></li>
+                <li><a href="#contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a></li>
+            </ul>
+        </div>
+     </nav>
+
+     <!-- home section -->
+      <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Hello, I'm</h6>
+                <h1 class="t-white">Nagaraju Sananagulla</h1>
+                <!-- <h4 class="poppinss">Software Engineer</h4> -->
+                <a href="{% static 'documents/Nagarajk_RESUME.pdf'  %}" target="_blank"><button class="btn poppins">Resume</button></a>
+                <a href="" class="btn live poppins" id="hireme" target="_blank">Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+                <img src="{% static 'images/file_1.png' %}" alt="This-Picture">
+            </div>
+        </div>
+      </section>
+
+
+      <!-- About Section -->
+       <section id="about">
+        <h1 class="t-center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around">
+            <div class="about-left flex s-center items-center">
+                <img src="{% static 'images/dog.png' %}" alt="" style="width:60%">
+            </div>
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1>Nagaraju Sananagulla</h1>
+                    <p>My name is Nagaraju Sananagulla.I'm a B.tech student ATRI in Computer Science & Engineering.
+                        I am Fresher, I'm passionate about creating quality products that meet all of the customer's needs, and I love learning new technologies that allow me to make that happen.While I generally enjoy all of my job, the part I find most draining is estimating projects for customers. I don't mind doing it, but I enjoy actually creating the software much more.
+                    </p>
+                    <a href="" class="btn" id="hireme">Hire Me</a>
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <!-- skills section  -->
+
+       <section id="skills">
+            <h1 class="t-center my-2 t-white f-2">Skills</h1>
+            <div class="services-container flex s-around h-50">
+                <div class="skills-left flex s-center items-center">
+                    <img src="{% static 'images/pro.png' %}" alt="">
+                </div>
+                <div class="skills-right flex items-center">
+                    <div class="skills-container">
+                        <div class="python bar p-relative"><span class="bar-content left t-white">Python</span><span class="bar-content right-skills t-white">90%</span></div>
+                        <div class="html bar p-relative"><span class="bar-content left t-white">HTML</span><span class="bar-content right-skills t-white">100%</span></div>
+                        <div class="css bar p-relative"><span class="bar-content left t-white">CSS</span><span class="bar-content right-skills t-white">80%</span></div>
+                        <div class="js bar p-relative"><span class="bar-content left t-white">JavaScript</span><span class="bar-content right-skills t-white">65%</span></div>
+                        <div class="django bar p-relative"><span class="bar-content left t-white">Django</span><span class="bar-content right-skills t-white">80%</span></div>
+                        <div class="mysql bar p-relative"><span class="bar-content left t-white">MySQL</span><span class="bar-content right-skills t-white">90%</span></div>
+                        <!-- <div class="java bar p-relative"><span class="bar-content left t-white">Core Python</span><span class="bar-content right-skills t-white">90%</span></div> -->
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <!-- projects section  -->
+       <section id="projects">
+            <h1 class="t-center my-2 t-white f-2">Projects</h1>
+            <div class="projects-container flex s-center">
+
+
+                <div class="projects-item flex f-col s-center items-center">
+                    <h1 class="t-white poppins">CRMS — School Management Portal</h1>
+                    <p>This is a Django-based School Management System designed to simplify the management of teachers and students. The application provides CRUD operations for adding, viewing, updating, and deleting teacher and student records through a clean web interface.</p><div class="buttons flex s-around">
+                        <a href="https://github.com/Nagraj2086/CRMS" target="_blanks" class="btn mx-1 m-top">GitHub</a>
+                        <a href="" target="_blanks" class="btn m-top live">Live Link</a>
+                    </div>
+                </div>
+
+                <div class="projects-item flex f-col s-center items-center">
+                    <h1 class="t-white poppins">GMS - Gym Management System</h1>
+                    <p>RD Gym is a Django-based Gym Management System designed to simplify daily gym operations. It supports member management, membership plans, trainers, payments, workout plans, attendance, and feedback. Built using Python, Django, MySQL, HTML, CSS, and Bootstrap.</p>                    <div class="buttons flex s-around">
+                        <a href="https://github.com/Nagraj2086/GMS" target="_blanks" class="btn mx-1 m-top">GitHub</a>
+                        <a href="" target="_blanks" class="btn m-top live">Live Link</a>
+                    </div>
+                </div>
+
+
+                <div class="projects-item flex f-col s-center items-center">
+                    <h1 class="t-white poppins">A Systematic Review of Chatbot(Tourism)</h1>
+                    <p>evaluating their impact on customer engagement, service efficiency, and personalized travel assistance in the tourism sector. Designed and implemented a Django backend with secure authentication for Admin and Tourist user roles. </p>
+                    <div class="buttons flex s-around">
+                        <a href="#" target="_blanks" class="btn mx-1 m-top">GitHub</a>
+                        <a href="" target="_blanks" class="btn m-top live">Live Link</a>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <!-- contact section  -->
+       <section id="contact" class="m-b-1">
+            <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+            <div class="contact-container flex s-around items-centers">
+                <div class="form" id="contactForm">
+                    {% if messages %}
+                        {% for message in messages %}
+                            <p>{{message}}</p>
+                        {% endfor %}
+                    {% endif %}
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <div class="name form-div">
+                            <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+                        </div>
+                        <div class="email form-div">
+                            <input type="email" name="email" id="" class="poppins" placeholder="Enter Your Email" required>
+                        </div>
+                        <div class="phone form-div">
+                            <input type="tel" name="number" class="poppins" placeholder="Enter Your Phone " required>
+                        </div>
+                        <div class="textarea form-div">
+                            <textarea name="content" id="textarea" cols="30" rows="10" class="poppins" placeholder="Enter Messages"></textarea>
+                        </div>
+                        <button type="submit" class="btn poppins" id="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+       </section>
+
+
+       <!-- footer section  -->
+        <footer id="footer">
+            <ul class="flex s-center w-80 m-auto my-2 res">
+                <li><a href="#home" class="poppinss">Home</a></li>
+                <li><a href="#about" class="poppinss">About</a></li>
+                <li><a href="#skills" class="poppinss">Skills</a></li>
+                <li><a href="#projects" class="poppinss">Projects</a></li>
+                <li><a href="#portfolio" class="poppinss">Portfolio</a></li>
+            </ul>
+
+            <ul class="flex s-center w-80 font-awesome">
+                <a href="" target="_blank"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
+                <a href="" target="_blank"><li><i class="fa-brands fa-github"></i></li></a>
+                <a href="" target="_blank"><li><i class="fa-brands fa-instagram"></i></li></a>
+            </ul>
+            <p class="t-center my-2 poppins" >&copy; All Rights Reserved - <span class="cpy-white poppins">Nagaraju Sananagulla</span> </p>
+        </footer>
+</body>
+</html>
